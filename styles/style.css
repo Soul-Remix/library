@@ -1,0 +1,180 @@
+html {
+  box-sizing: border-box;
+  font-size: 10px;
+  font-weight: 900;
+  font-family: 'Open Sans', sans-serif;
+}
+
+* ::after ::before {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #e5e5e5;
+}
+
+header {
+  font-family: 'Roboto', sans-serif;
+  font-size: 3rem;
+  text-align: center;
+  background-color: #2b2d42;
+  color: white;
+  margin: 0px;
+  padding: 2rem;
+}
+
+hr {
+  margin: 0px;
+}
+
+.add {
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 1.5em;
+}
+
+.add-btn {
+  padding: 2rem;
+  background: #2b2d42;
+  color: white;
+  border-radius: 10px;
+  box-shadow: 2px 2px gray;
+}
+
+.add-btn:hover {
+  background: hsla(208, 80%, 60%, 1);
+}
+
+ul {
+  list-style: none;
+  padding: 0px;
+}
+
+li {
+  padding-top: 0.5rem;
+  font-weight: 500;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.card {
+  font-size: 2rem;
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 300px;
+  min-width: 30vw;
+  text-align: center;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  background-color: #ffffff;
+  color: #14213d;
+}
+
+.btns {
+  width: 70%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.btn {
+  padding: 1rem;
+  margin-bottom: 2rem;
+  border-radius: 10px;
+}
+
+.remove-btn {
+  background-color: #ef233c;
+}
+
+.remove-btn:hover {
+  background-color: #d90429;
+}
+
+.read-btn {
+  background-color: #06d6a0;
+}
+
+.read-btn:hover {
+  background-color: #b8ff9a;
+}
+
+.not-read {
+  background-color: #ffd166;
+}
+
+.not-read:hover {
+  background-color: #fdfd5f;
+}
+
+/* Form */
+
+.form {
+  font-size: 2.5rem;
+  min-width: 400px;
+  height: 95vh;
+  border: 1px solid black;
+  background-color: #e5e5e5;
+  position: fixed;
+  z-index: 1;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transition: 200ms ease-in-out;
+}
+
+form {
+  height: 90vh;
+  display: flex;
+  justify-content: space-around;
+  align-content: space-around;
+  flex-flow: column wrap;
+}
+
+p {
+  text-align: center;
+  display: inline-block;
+  margin-bottom: 0px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 3rem;
+}
+
+input {
+  margin-top: 3rem;
+  padding: 1rem;
+}
+
+.read-check {
+  margin-top: 4rem;
+}
+
+#check-read {
+  margin-left: 4rem;
+}
+
+.submit-btn {
+  margin-top: 3rem;
+}
+
+/* Overlay */
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 1;
+}
+
+.overlay-active {
+  display: block;
+}
